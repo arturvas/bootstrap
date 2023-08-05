@@ -10,6 +10,49 @@
     />
   </head>
   <body>
-    <h1>Olá Bootstrap</h1>
+    <!-- cria-se o accordion -->
+    <div class="accordion">
+      <!-- item dentro do accordion -->
+      <div class="accordion-item">
+        <!-- cabecalho do accordion -->
+        <div class="accodion-header">
+          <!-- botao  com estilo de botao de accordion com a classe accordion-button,
+          data-bs-tootle='collapse' é um dos atributos que trouxemos do JS
+          ele faz o efeito de abrir e fechar e o data-bs-target='#resposta1'
+          diz quem é o alvo a ser exibido -->
+          <button
+            class="accordion-button"
+            data-bs-toggle="collapse"
+            data-bs-target="#resposta1"
+          >
+            Pergunta
+          </button>
+        </div>
+        <!-- atributos customizados para o bootstrap a partir de data-bs'...' ="..." -->
+        <!-- onde bs = bootstrap -->
+        <!-- 'accordion-collapse' = aquilo que sera exibido quando o botao for cliclado e a 'collapse' como sera exibido  -->
+        <div id="resposta1" class="accordion-collapse collapse">
+          <!-- accordion-body é onde o elemento sera exibido -->
+          <div class="accordion-body">Resposta da pergunta</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accodion-header">
+          <button
+            class="accordion-button"
+            data-bs-toggle="collapse"
+            data-bs-target="#resposta2"
+          >
+            Pergunta 2
+          </button>
+        </div>
+        <!-- atributos customizados para o bootstrap a partir de data-bs'...' ="..." -->
+        <!-- onde bs = bootstrap -->
+        <div id="resposta2" class="accordion-collapse collapse">
+          <div class="accordion-body">Resposta da pergunta 2</div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
