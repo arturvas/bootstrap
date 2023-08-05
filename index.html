@@ -9,7 +9,37 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
     />
   </head>
+  <style>
+    body {
+      padding: 80px;
+    }
+
+    #preco p {
+      width: 300px;
+    }
+  </style>
   <body>
-    <h1>Olá Bootstrap</h1>
+    <button
+      class="btn btn-primary"
+      data-bs-toggle="collapse"
+      data-bs-target="#preco"
+    >
+      Ver preço
+    </button>
+    <div class="collapse collapse-horizontal" id="preco">
+      <p>3x de R$ 300,00</p>
+    </div>
+    <div class="row"></div>
+    <button
+      class="btn btn-primary"
+      data-bs-toggle="collapse"
+      data-bs-target="#preco2"
+    >
+      Ver preço 2
+    </button>
+    <div class="collapse collapse" id="preco2">
+      <p>3x de R$ 302,00</p>
+    </div>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </html>
